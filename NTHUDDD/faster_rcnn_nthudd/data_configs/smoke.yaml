@@ -1,0 +1,18 @@
+# Images and labels direcotry should be relative to train.py
+TRAIN_DIR_IMAGES: ../data/train/images
+TRAIN_DIR_LABELS: ../data/train/annotations
+# VALID_DIR should be relative to train.py
+VALID_DIR_IMAGES: ../data/valid/images
+VALID_DIR_LABELS: ../data/valid/annotations
+
+# Class names.
+CLASSES: [
+    '__background__',
+    'no_cheating',
+    'cheating' ]
+
+# Number of classes (object classes + 1 for background class in Faster RCNN).
+NC: 3
+
+# Whether to save the predictions of the validation set while training.
+SAVE_VALID_PREDICTION_IMAGES: True
